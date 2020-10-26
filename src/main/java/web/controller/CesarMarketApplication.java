@@ -1,4 +1,4 @@
-package com.Cesar_Market;
+package web.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,5 +9,4 @@ public class CesarMarketApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CesarMarketApplication.class, args);
 	}
-
 }
