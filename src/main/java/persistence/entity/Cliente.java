@@ -1,9 +1,7 @@
 package persistence.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "clientes")
@@ -17,6 +15,25 @@ public class Cliente {
     private String direccion;
     @Column(name = "correo_electronico")
     private String email;
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Compra> compra;
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public List<Compra> getCompra() {
+        return compra;
+    }
+
+    public void setCompra(List<Compra> compra) {
+        this.compra = compra;
+    }
 
     public Integer getIdCliente() {
         return idCliente;

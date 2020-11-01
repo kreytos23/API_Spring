@@ -3,6 +3,7 @@ package persistence.entity;
 import javax.persistence.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /*
     @Entity         se indica que la clase de va a comportar como una tabla SQL
@@ -30,6 +31,29 @@ public class Compra {
     private String medioDePago;
     private String comentario;
     private String estado;
+
+    @ManyToOne
+    @JoinColumn(name = "id",insertable = false ,updatable = false)
+    private Cliente cliente;
+
+    @OneToMany(mappedBy = "producto")
+    private List<ComprasProductos> comprasProductos;
+
+    public List<ComprasProductos> getComprasProductos() {
+        return comprasProductos;
+    }
+
+    public void setComprasProductos(List<ComprasProductos> comprasProductos) {
+        this.comprasProductos = comprasProductos;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
 
     public Integer getIdCompra() {
         return idCompra;
