@@ -18,7 +18,6 @@ import javax.persistence.*;
     @JoinColumn     Define a que columna se le relacionara (la PK de la tabla que
                     se le relaciona, ademas de agregar las anotaciones para que no sea posible
                     editar o modificar la tabla que se le relaciona desde la tabla que
-                    contiene la FK
     Esta es una clase que se referenciara a la tabla Compra en la base de datos
  */
 @Entity
