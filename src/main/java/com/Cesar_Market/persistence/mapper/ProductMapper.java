@@ -1,11 +1,11 @@
-package persistence.mapper;
+package com.Cesar_Market.persistence.mapper;
 
-import domain.Product;
+import com.Cesar_Market.domain.Product;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
-import persistence.entity.Producto;
+import com.Cesar_Market.persistence.entity.Producto;
 
 import java.util.List;
 
@@ -26,6 +26,6 @@ public interface ProductMapper {
 
     @InheritInverseConfiguration
     @Mapping(target = "codigoBarras",ignore = true)
-    Producto toProduct(Product product);
+    Producto toProducto(Product product);
     List<Producto>toProductos(List<Product> products);
 }

@@ -1,6 +1,6 @@
-package domain.repository;
+package com.Cesar_Market.domain.repository;
 
-import domain.Product;
+import com.Cesar_Market.domain.Product;
 import org.apache.catalina.LifecycleState;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package domain;
+package com.Cesar_Market.domain;
 
 public class Product {
     private int productId;

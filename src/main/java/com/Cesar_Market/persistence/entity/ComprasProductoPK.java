@@ -1,4 +1,4 @@
-package persistence.entity;
+package com.Cesar_Market.persistence.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;

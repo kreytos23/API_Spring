@@ -1,8 +1,7 @@
-package persistence.crud;
+package com.Cesar_Market.persistence.crud;
 
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import persistence.entity.Producto;
+import com.Cesar_Market.persistence.entity.Producto;
 
 import java.util.List;
 import java.util.Optional;

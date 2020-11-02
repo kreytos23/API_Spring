@@ -1,13 +1,12 @@
-package persistence.mapper;
+package com.Cesar_Market.persistence.mapper;
 
-import domain.Category;
+import com.Cesar_Market.domain.Category;
 
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
-import persistence.entity.Categoria;
-import persistence.entity.Producto;
+import com.Cesar_Market.persistence.entity.Categoria;
 
 @Mapper(componentModel = "spring")
 public interface CategoryMapper {
