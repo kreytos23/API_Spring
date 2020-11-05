@@ -22,6 +22,18 @@ import java.util.Optional;
     6.- Se retorna mandando a llamar las funciones de la interface con las respectivas tablas
  */
 
+/*
+    Para adapatar el Data Mapper junto con la interfaz de Struct Mapper que hace el intercambio de datos
+    se implementa la interfaz de los metodos ya con el nombre para el dominio
+    Se usa el mapper para pasar de un tipo de dato a otro
+ */
+
+/**
+ * @Autowired Sirve para que Spring se encargue de crear las instancias de donde utilizaremos los metodos
+ *              como el ProductRepository siempre y cuando la clase donde se declara es un componente de spring
+ *              como @Repository
+ */
+
 @Repository
 public class ProductoRepository implements ProductRepository {
     @Autowired

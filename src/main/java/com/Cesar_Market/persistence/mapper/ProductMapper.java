@@ -9,6 +9,12 @@ import com.Cesar_Market.persistence.entity.Producto;
 
 import java.util.List;
 
+/*
+    En esta clase se usa el mapper que ayudara a facilitar el cambio de una clase a otra, poniendo como sourse el
+    atributo de donde se tomaran los datos, en este caso el de la base de datos, y como target se usan los atributso de
+    nuestra clase que se usara en nuestra API
+ */
+
 @Mapper(componentModel = "spring", uses = {CategoryMapper.class})
 public interface ProductMapper {
 
