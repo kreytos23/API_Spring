@@ -4,14 +4,14 @@ public class PurchaseItem {
     private int productId;
     private int quantity;
     private double total;
-    private boolean state;
+    private boolean active;
 
     public int getProductId() {
         return productId;
     }
 
-    public void setProductID(int productID) {
-        this.productId = productID;
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
     public int getQuantity() {
@@ -30,11 +30,11 @@ public class PurchaseItem {
         this.total = total;
     }
 
-    public boolean isState() {
-        return state;
+    public boolean isActive() {
+        return active;
     }
 
-    public void setState(boolean state) {
-        this.state = state;
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }

@@ -20,11 +20,11 @@ public class Purchase {
         this.purchaseId = purchaseId;
     }
 
-    public String getClient() {
+    public String getClientId() {
         return clientId;
     }
 
-    public void setClient(String client) {
+    public void setClientId(String clientId) {
         this.clientId = clientId;
     }
 
