@@ -4,6 +4,11 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import java.io.Serializable;
 
+/**
+ * La interface Serializable se usa para que al momento de crear un objeto, este es convertido en una Stream of
+ * Bytes, que es util para poder mandar ese "Objeto serializado" mas facíl a través de un File, BD o por la red
+ */
+
 @Embeddable
 public class ComprasProductoPK implements Serializable {
     @Column(name = "id_compra")
